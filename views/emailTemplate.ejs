@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - <%= data.name %></title>
+</head>
+<body>
+    <table cellpadding="0" cellspacing="0" align="center" width="100%" style="background-color:#f7f7f7; font-family:Arial, Helvetica, sans-serif">
+        <tr>
+            <td valign="top">
+                <table cellpadding="0" cellspacing="0" width="718" align="center" style="background:rgba(0,0,0,0.1);margin-top:20px;">
+                    <tr>
+                        <td width="18"></td>
+                        <td width="598" style="background-color:#ffffff; padding:42px" valign="top">
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td height="110" align="center" valign="top"><a href="https://www.sandblasting.com"><img src='http://strippingpaint.co.uk/wp-content/uploads/2020/05/3D-Wooden-Logo-MockUp2-300x125.png' /></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="background:#9acb51;color:#ffffff; font-size:18px; text-transform:capitalize; font-family:sans-serif; font-weight:bold; padding:10px;">
+                                        You got an email from your website!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                
+    <tr><td valign="top" style="background-color:#f8f8f8; padding:5px"><table cellpadding="0" cellspacing="0" width="100%" style="background-color:#f1f1f1; color:#555555; font-size:14px; font-family:sans-serif;">
+    
+    <tr><td width="40%" style="color:#999999; font-size:14px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">Customer Name</td><td style="color:#555555; font-size:14px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;"><%= data.name %></td></tr> 
+     
+    <tr><td width="40%" style="color:#999999; font-size:14px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">Phone Number</td><td style="color:#555555; font-size:14px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;"><%= data.phone %></td></tr> 
+    
+    <tr><td width="40%" style="color:#999999; font-size:14px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">Email</td><td style="color:#555555; font-size:14px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;"><%= data.email %></td></tr> 
+    
+    <tr><td width="40%" style="color:#999999; font-size:14px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">Location</td><td style="color:#555555; font-size:14px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;"><%= data.location %></td></tr>
+    
+    <tr><td width="40%" style="color:#999999; font-size:14px; font-weight:bold; font-family:sans-serif; border-right:2px solid #f8f8f8; border-bottom:2px solid #f8f8f8; text-transform:capitalize; padding:15px 10px">Message</td><td style="color:#555555; font-size:14px; font-family:sans-serif; border-bottom:1px solid #f8f8f8; padding:15px 10px;"><%= data. message %></td></tr>
+    
+                                        </table>
+                                    </td>
+                                </tr>                            
+                            </table>
+                            <br><br><br><br>
+                            --------
+                            <br>
+                            <p style="font-size:14px;">This e-mail was sent from <%= data.sentFrom %></p>
+                        </td>
+                        <td width="18"></td>
+                    </tr>               
+                </table>
+            </td>
+        </tr> 
+    </table>
+</body>
+</html>

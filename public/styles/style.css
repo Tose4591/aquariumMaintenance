@@ -1,0 +1,278 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Cinzel:wght@800&display=swap');
+
+/* navbar */
+
+.navbar-nav .nav-item .nav-link {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    color: #dddddd;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 50%;
+}
+
+.active {
+    color: #d4d4d4;
+}
+
+/* homepage */
+.featuredImage {
+    height: 100vh;
+}
+
+.mainImage img {
+    margin-top: -2.5rem;
+    width: 100%;
+}
+
+.featuredHeading h1,
+.featuredHeading h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: #474747 3px 2px 2px;
+    text-align: center;
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+}
+
+/* about us and our work section*/
+.aboutUs {
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.aboutUs h2,
+.ourWork h2,
+.contactForm h2 {
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.aboutUs p {
+    line-height: 2;
+}
+
+.aboutUs img {
+    width: 50%;
+    height: auto;
+}
+
+.aboutUsLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourWork img {
+    width: 100%;
+}
+
+
+/* image modal */
+.ourWorkGallery img {
+    width: 100%;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+.modal-backdrop {
+    opacity: 0.9 !important;
+}
+
+.modal button {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.ourWorkGallery button {
+    background-color: transparent;
+    border: none;
+}
+
+.ourWorkGallery button:hover,
+.ourWorkGallery button:focus,
+.ourWorkGallery button:active {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    filter: brightness(50%);
+}
+
+
+/* divider */
+.divider {
+    height: 300px;
+    background-image: url('/images/divider1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.divider2 {
+    height: 300px;
+    margin: 5rem 0;
+    background-image: url('/images/divider4.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+/* contact us */
+.socialLinks a {
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 100;
+    line-height: 1.7;
+    text-decoration: underline;
+    text-underline-offset: 10%;
+}
+
+.socialIcons a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+.socialIcons a:hover {
+    color: #bebebe;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+
+.contactSubmit {
+    width: 100%;
+    background-color: #09c8e4;
+    border: #09c8e4 2px solid;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.contactSubmit:hover {
+    background-color: transparent;
+    color: #09c8e4;
+    border: solid 2px #09c8e4;
+}
+
+.contactMessage {
+    display: none;
+}
+
+.contactFormSuccess {
+    display: block;
+    padding: 0.25em;
+    border: 1px solid green;
+    border-radius: 10px;
+    color: green;
+    margin-top: 1rem;
+
+}
+
+.contactFormFail {
+    display: block;
+    padding: 0.25em;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: red;
+    margin-top: 1rem;
+}
+
+/*footer */
+.footerDivider {
+    height: 1px;
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+}
+
+footer h3 {
+    font-weight: 400;
+}
+
+.socialLinks strong {
+    font-size: 1.25rem;
+}
+
+/* contact page */
+.contactPage {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .contactPage {
+        margin-top: 10rem;
+    }
+}
+
+/* gallery page */
+.pageImage {
+    height: 75vh;
+    background-image: url('/images/pageImage.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.pageImage h1 {
+    font-size: 3rem;
+}
+
+.pageImage h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.contactFormImage {
+    background-image: url('/images/divider3.jpg');
+    background-size: cover;
+    background-position: 50% 70%;
+    background-attachment: fixed;
+}
+
+/* technical */
+.technicalGallery .card {
+    border: none;
+}
+
+.aquariumSetup,
+.technicalGallery {
+    margin-top: 10rem;
+}
+
+/* slider */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}

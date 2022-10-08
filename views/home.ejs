@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles/main.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/images/logo/blueLogo.png">
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid p-0">
+        <div class="row w-100 bg-black m-0 featuredImage">
+            <%- include('./partials/navbar') %>
+            <div class="col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2 mainImage">
+                <img src="/images/featuredImageCropped22.png" alt="Aquarium Maintenance">
+            </div>
+            <div class="featuredHeading">
+                <h1>Aquarium Maintenance</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row w-100 bg-dark text-light m-0 aboutUs">
+                <div class="col-12 col-md-6 offset-md-1">
+                    <h2>Aquarium Maintenance Greater London Area</h2>
+                    <p>Do you want to transform your aquarium? Then you are looking in the right place. </br>
+                        Our company, with many years experience has benefited hundreds of satisfied customers. Our
+                        quality,
+                        punctuality and attention to detail is second to none.</br>
+                        We can help you bring a beautiful, pieceful part of nature into your home - and our
+                        professionals
+                        will
+                        help you with your choice.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 aboutUsLogo">
+                    <img src="/images/logo/blueLogo.png" alt="Aquarium Maintenance Company">
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 divider">
+            <div class="col-12">
+            </div>
+        </div>
+        <div class="row w-100 bg-dark text-light m-0 pt-5 ourWork">
+            <div class="col-12 pt-5 text-center">
+                <h2>Our Work</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row w-100 bg-dark text-light m-0 pb-5 ourWorkGallery" data-masonry='{"percentPosition": true }'>
+                <% for (let i=1; i<=6; i++) { %>
+                <div class="col-12 col-md-6 col-xl-4 py-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#project<%= i %>">
+                        <img src='/images/portfolio/aquarium<%= i %>.jpg' alt="Aquarium <%= i %>">
+                    </button>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="row w-100 divider2">
+            <div class="col-12">
+            </div>
+        </div>
+        <div class="row w-100 m-0 py-5 contactForm">
+            <%- include('./partials/contactForm') %>
+        </div>
+
+        <!-- Modal -->
+        <% for (let i=1; i<=6; i++) { %>
+        <div class="modal fade" id="project<%= i %>" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <button type="button" class="btn-close btn-close-white btn-lg" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            <div class="modal-dialog modal-lg  modal-dialog-centered">
+                <div class="modal-content  bg-transparent">
+                    <div class="modal-body">
+                        <img src='/images/portfolio/aquarium<%= i %>.jpg' alt="Aquarium <%= i %>">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+        <%- include('./partials/footer') %>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+    <script src="/scripts/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles/main.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/images/logo/blueLogo.png">
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid p-0">
+        <div class="row w-100 bg-black m-0 pageImage">
+            <%- include('./partials/navbar') %>
+            <div class="featuredHeading">
+                <h1>Technical</h1>
+                <h2>Aquarium Set Up & Maintenance</h2>
+            </div>
+        </div>
+        <div class="container-fluid px-0 aquariumSetup">
+            <div class="row w-100 mx-0 my-5">
+                <div class="featuredHeading my-5">
+                    <h2>Aquarium Setup</h2>
+                </div>
+                <div class="row w-100 p-0 mx-0 mt-3">
+                    <div id="carouselExampleIndicators" class="carousel slide px-0" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/slider1.jpg" class="d-block w-100" alt="Aquarium Display 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/slider2.jpg" class="d-block w-100" alt="Aquarium Display 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/slider3.jpg" class="d-block w-100" alt="Aquarium Display 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container technicalGallery">
+            <div class="featuredHeading my-5">
+                <h2>Aquarium Maintenance</h2>
+            </div>
+            <div class="row w-100 justify-content-center bg-dark text-light m-0 pb-5">
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/images/technical1.jpg" alt="Aquarium Gravel Vacuuming">
+                        <div class="card-body bg-black">
+                            <h5 class="card-title text-center">Gravel Vacuuming</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/images/technical2.jpg" alt="Aquarium Decoration Cleaning">
+                        <div class="card-body bg-black">
+                            <h5 class="card-title text-center">Decoration Cleaning</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/images/technical3.jpg" alt="Aquarium Filter Cleaning">
+                        <div class="card-body bg-black">
+                            <h5 class="card-title text-center">Filter Cleaning</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/images/technical4.jpg" alt="Aquarium Water Changing">
+                        <div class="card-body bg-black">
+                            <h5 class="card-title text-center">Water Changing</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/images/technical5.jpg" alt="Fish feeding">
+                        <div class="card-body bg-black">
+                            <h5 class="card-title text-center">Fish Feeding</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/images/technical6.jpg" alt="Aquarium Plants Trimming">
+                        <div class="card-body bg-black">
+                            <h5 class="card-title text-center">Plants Trimming</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/images/technical7.jpg" alt="Aquarium Glass Cleaning">
+                        <div class="card-body bg-black">
+                            <h5 class="card-title text-center">Glass Cleaning</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row w-100 m-0 py-5 contactForm contactFormImage">
+            <%- include('./partials/contactForm') %>
+        </div>
+        <%- include('./partials/footer') %>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+    <script src="/scripts/contact.js"></script>
+</body>
+
+</html>
